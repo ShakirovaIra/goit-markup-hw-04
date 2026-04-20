@@ -103,7 +103,6 @@ body {
 
 .header-address {
   font-style: normal;
-  margin-left: auto;
 }
 
 .header-address-list {
@@ -135,6 +134,14 @@ body {
 
 .hero {
   background: #2e2f42;
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
   padding-block: 188px;
 }
 
@@ -197,7 +204,7 @@ body {
 }
 
 .feature-item {
-  width: calc( (100% - 24px * 3) / 4 );
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .feature-subtitle {
@@ -232,7 +239,7 @@ body {
     0 1px 6px 0 rgba(106, 107, 130, 0.08);
   background: #fff;
   border-radius: 0 0 4px 4px;
-  width: calc( (100% - 24px * 3) / 4 );
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .team-image {
@@ -271,7 +278,7 @@ body {
 }
 
 .portfolio-item {
-  width: calc( (100% - 24px * 2) / 3 );
+  width: calc((100% - 24px * 2) / 3);
 }
 
 .portfolio-image {
