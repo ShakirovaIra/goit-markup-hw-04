@@ -91,14 +91,38 @@ body {
   color: #2e2f42;
   display: block;
   padding: 24px 0;
+  position: relative;
 }
 
 .header-link:focus {
   color: #404bbf;
 }
 
+
+.header-link:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+  background: #404bbf;
+}
+
 .header-link:hover {
   color: #404bbf;
+}
+
+.header-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+  background: #404bbf;
 }
 
 .header-address {
