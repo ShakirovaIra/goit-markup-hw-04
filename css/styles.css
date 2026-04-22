@@ -92,12 +92,13 @@ body {
   display: block;
   padding: 24px 0;
   position: relative;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .header-link:focus {
   color: #404bbf;
 }
-
 
 .header-link:focus::after {
   content: "";
@@ -106,7 +107,7 @@ body {
   height: 4px;
   border-radius: 2px;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   background: #404bbf;
 }
 
@@ -121,7 +122,7 @@ body {
   height: 4px;
   border-radius: 2px;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   background: #404bbf;
 }
 
@@ -146,6 +147,7 @@ body {
   font-style: normal;
   display: block;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:focus {
@@ -195,6 +197,7 @@ body {
   color: #fff;
   cursor: pointer;
   border: none;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
@@ -220,6 +223,23 @@ body {
 
 .section {
   padding-block: 120px;
+}
+
+.feature-container-icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
 }
 
 .features-list {
@@ -292,6 +312,37 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-link:hover {
+  background: #404bbf;
+}
+
+.team-social-link:focus {
+  background: #404bbf;
+}
+
+.team-social-icon {
+  fill: #fff;
 }
 
 .portfolio-list {
@@ -339,8 +390,14 @@ body {
   padding-block: 100px;
 }
 
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-info {
   width: 264px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -364,4 +421,42 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+.footer-social-title {
+ font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+ margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-link:hover {
+  background: #31d0aa;
+}
+
+.footer-social-link:focus {
+  background: #31d0aa;
+}
+
+.footer-social-icon {
+  fill: #fff;
 }
